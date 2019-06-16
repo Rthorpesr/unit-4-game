@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CRYSTAL COLLECTOR GAME</title>
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+  <!-- Added a link to Bootstrap-->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- Added link to the jQuery Library -->
+  
+</head>
+
+    <body>
+        <h1>The Crystal Collector's Game</h1>
+
+        <img src="./assets/images/1-CrystalCollector.jpg" class="game-image" alt="GameBoard">
+
+        <div class="text-center">
+
+                <!-- Here we have our button for generating random numbers (#random-button) -->
+                <button id="random-button" class="btn btn-primary btn-lg fa fa-question"></button>
+          
+        </div>
+
+        
+        <script> 
+                $(document).ready(function()
+                   {
+        
+                        
+    /*
+                        $("#random-button").on("click", function() 
+
+                            {
+                                var Min = 19;
+                                var Max  = 120;
+                                // ... we generate a random number
+                                var computerRandomNum = Math.floor(min + Math.random()*(max + 1 - min))
+                                console.log(computerRandomNum);
+                                // ... and then dump the random number into our random-number div.
+                                $("#random-number").text(computerRandomNum);
+                                  
+                            });
+                        console.log("Reggie");
+*/                         
+                        $("#random-button").on("click", function() 
+
+                            {
+                                var min = 1;
+                                var max = 12;
+                                // ... we generate a random number
+                                var playerRandomNum = Math.floor(min + Math.random()*(max + 1 - min))
+                                console.log(playerRandomNum);
+                                // ... and then dump the random number into our random-number div.
+                                $("#random-number").text(playerRandomNum);
+                                
+                            });
+                        console.log("Reggie");
+                    });
+        
+        </script>
+
+        <link rel="jQuery" type="jQuery" href="./assets/javascript/game.js"/>
+    </body> 
+</html>
+    
+ 
