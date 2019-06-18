@@ -1,13 +1,11 @@
 
-
 * {
   box-sizing: border-box;
 }
 
 body {
   /* Typography */
-   
- background-color: rgb(179, 165, 165);
+
   
  /* background: url('./concrete_seamless.png'); */
   line-height: 27px;
@@ -43,23 +41,17 @@ body {
   margin-bottom: 10px;
 }
 
-img {
- height: 75px;
- width:  75px;
- padding:3px;
-}
-
-#instr {
+/* Paragraph Styling  */
+#instructions {
   color: yellow;
   background-color: green;
   padding: 5px 10px 15px 10px;
   clear:both;
-  width: 470px;
+  width: 800px;
   margin-bottom:5px;
 }
 
-
-#compnumber {
+#computerNumber {
   color: black;
   background-color: green;
   padding: 5px 10px 15px 10px;
@@ -70,30 +62,28 @@ img {
   margin-bottom: 15px;
 }
 
-.winlose {
- clear: right;
-  height: 100px;
-  width: 240px;
-  background-color:#3e5288;
+/* wins and losses   */
+#winsLosses {
+  clear:both;
+   height: 100px;
+   width: 100px;
+   background-color:#3e5288;
+ }
+
+/* wins and losses   */
+img {
+ height: 75px;
+ width:  75px;
+ padding:3px;
 }
 
-
-#playernum {
-  background-color:#056e7594;
-  color: black;
-  margin-top: 10px;
- 
-  width: 200px;
-  height: 60px;
-}
- 
   #crystals {
     margin-top: 10px;
     clear:both;
     width:400px;
   }
 
-  .thetotalScore {
+  #totalScore {
     background-color:#056e7594;
     color: white;
     width: 200px;
