@@ -1,71 +1,103 @@
-/**
- * Media Query Demo (note the commented rules)
- **/
+
 
 * {
   box-sizing: border-box;
 }
 
-/*
-  The background color will be #ccc
-  at browser widths above 768px
-*/
 body {
   /* Typography */
-  font-size: 18px;
+   
+ background-color: rgb(179, 165, 165);
+  
+ /* background: url('./concrete_seamless.png'); */
   line-height: 27px;
 
-  /* Visual */
-  background-color: #ccc;
+  /* Visual 
+  background-color: #ccc;*/
 }
 
-/*
-  The width of the wrapper will be 1024px
-  at browser widths above 768px
-*/
-.wrapper {
-  /* Box-model */
-  width: 1024px;
-
-  /* Positioning */
-  margin: 40px auto;
+.container{
+  background-image: url(../Images/gameback.jpg);
+  width: 100%;
+  height: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 10px;
+  clear: both;
 }
 
-#main-content,
-#sidebar {
-  /* Box-model */
-  width: 500px;
-  padding: 30px;
+/* Logo Styling  */
+#logo{
+  width:600px;
+  height: 90px;
+  padding: 10px;
+  background: #4aaaa5;
+  float:left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  margin-bottom: 10px;
 }
 
-#main-content {
-  /* Positioning */
-  float: left;
-
-  /* Visual */
-  background: #fff;
+img {
+ height: 75px;
+ width:  75px;
+ padding:3px;
 }
 
-#sidebar {
-  /* Positioning */
-  float: right;
-
-  /* Visual */
-  background: #eee;
+#instr {
+  color: yellow;
+  background-color: green;
+  padding: 5px 10px 15px 10px;
+  clear:both;
+  width: 470px;
+  margin-bottom:5px;
 }
 
-/*
-  These rules take effect when the browser's width
-  is either 768px or less.
-*/
-@media screen and (max-width: 768px) {
-  /* The body's bg color will be #333 */
-  body {
-    background-color: #333;
+
+#compnumber {
+  color: black;
+  background-color: green;
+  padding: 5px 10px 15px 10px;
+  float:left;
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.winlose {
+ clear: right;
+  height: 100px;
+  width: 240px;
+  background-color:#3e5288;
+}
+
+
+#playernum {
+  background-color:#056e7594;
+  color: black;
+  margin-top: 10px;
+ 
+  width: 200px;
+  height: 60px;
+}
+ 
+  #crystals {
+    margin-top: 10px;
+    clear:both;
+    width:400px;
   }
 
-  /* The wrapper's width will be 600px */
-  .wrapper {
-    width: 600px;
+  .thetotalScore {
+    background-color:#056e7594;
+    color: white;
+    width: 200px;
   }
-}
+
+
+
