@@ -9,64 +9,74 @@
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
   <!-- Added a link to Bootstrap-->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <!-- Added link to the jQuery Library -->
-  
+
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 </head>
 
     <body>
-        <h1>The Crystal Collector's Game</h1>
 
-        <img src="./assets/images/1-CrystalCollector.jpg" class="game-image" alt="GameBoard">
+        <div class="container"> 
+                    <h1 id="logo">The Crystal Collector's Game</h1>
 
-        <div class="text-center">
+                    <div id="instr">
+                            <p> You will be given a random number at the start of the game.</p>
+                            <br>
+                            <p>There are four crystals below. By clicking on a crystal you 
+                                will add a specific amount of points to your total score. </p>
+                                <br>
+                            <p id="test"> You win the game by matching your total score to random number,
+                                you lose the game if your total score goes above the radom number.</p>
+                            <br>
+                            <p>The value of each crystal is hidden from you until you click on it</p>
+                            <br>
+                            <p>Each time when the game starts, the game will change the values of each crystal</p>
+                    </div>
 
-                <!-- Here we have our button for generating random numbers (#random-button) -->
-                <button id="random-button" class="btn btn-primary btn-lg fa fa-question"></button>
-          
+                    <div id="compnumber">                        
+                        <h2 class="text-center">go</h2>
+                   
+                    </div>
+                    
+                    <div class="winlose">
+                        <p>Wins:</p>
+                        <p id="wins">0</p> 
+                        <p>Losses:</p> 
+                        <p id="Losses">0</p>
+                    </div>
+
+                    <div class="4crystals" id="crystals">
+                        <button id="rubyone" class="btn btn-primary"><img src="./assets/images/ruby.jpg"></button>
+                        <button id="blueone" class="btn btn-primary"><img src="./assets/images/blue diamond.png"></button>
+                        <button id="yellowone" class="btn btn-primary"><img src="./assets/images/yellow stone.jpg"></button>
+                        <button id="greenone" class="btn btn-primary"><img src="./assets/images/Green stone.png"></button>
+                    </div> 
+                   
+
+                    <div class="thetotalScore">
+                        <div>Your total score is:</div> 
+                        <div id="totScore">0</div>  
+                    </div>
+
+                    <div id="playernum">                        
+                        <h2 class="text-center">go</h2>
+                    
+                                      
+                    </div>
+                    
+                    
+                          
         </div>
-
-        
-        <script> 
-                $(document).ready(function()
-                   {
-        
-                        
-    /*
-                        $("#random-button").on("click", function() 
-
-                            {
-                                var Min = 19;
-                                var Max  = 120;
-                                // ... we generate a random number
-                                var computerRandomNum = Math.floor(min + Math.random()*(max + 1 - min))
-                                console.log(computerRandomNum);
-                                // ... and then dump the random number into our random-number div.
-                                $("#random-number").text(computerRandomNum);
-                                  
-                            });
-                        console.log("Reggie");
-*/                         
-                        $("#random-button").on("click", function() 
-
-                            {
-                                var min = 1;
-                                var max = 12;
-                                // ... we generate a random number
-                                var playerRandomNum = Math.floor(min + Math.random()*(max + 1 - min))
-                                console.log(playerRandomNum);
-                                // ... and then dump the random number into our random-number div.
-                                $("#random-number").text(playerRandomNum);
-                                
-                            });
-                        console.log("Reggie");
-                    });
-        
-        </script>
-
-        <link rel="jQuery" type="jQuery" href="./assets/javascript/game.js"/>
+                    
+                    <script type="text/javascript">
+                            
+                    </script>
+           <!-- Added link to the jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="./assets/javascript/game.js"></script>
+        <!-- <link rel="jQuery" type="jQuery" href="./assets/javascript/game.js"/> -->
     </body> 
 </html>
     
