@@ -83,11 +83,16 @@ img {
     width:400px;
   }
 
-  #totalScore {
+  .thetotalScore {
     background-color:#056e7594;
     color: white;
     width: 200px;
   }
 
+  .scorebox {
+    background-color:#056e7594;
+    color: white;
+    width: 200px;
+  }
 
 
